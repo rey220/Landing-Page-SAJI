@@ -52,7 +52,9 @@ body {
 
 }
 
-.nav-items {
+.nav-items,
+.cta-btn,
+.price-list-btn {
 
     list-style: None;
 
@@ -64,5 +66,113 @@ body {
     font-size: 1.2rem;
     color: var(--color-ink);
     font-weight: 500;
+
+}
+
+
+.hero-page {
+
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    min-height: 100vh;
+
+    
+    
+}
+
+.main-content {
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.second-label {
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+.label-text {
+
+    font-size: 1.25rem;
+    line-height: 18px;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    color:  var(--color-ink);
+    
+}
+
+.headline-container {
+
+    max-width: 980px;
+    min-width: 0;
+    margin-bottom: 2rem;
+
+}
+
+.headline-text {
+    
+    font-size: 5rem ;
+    line-height: 90px;
+    color:  var(--color-ink);
+    
+}
+
+.intro-container {
+
+    max-width: 600px;
+    min-width: 0;
+    margin-bottom: 4rem;
+
+}
+
+.intro-desc {
+    
+    text-align: left;
+    font-size: 1.7rem;
+    line-height: 40px;
+    color:  var(--color-ink);
+
+}
+
+.cta-container {
+
+    display: flex;
+    gap: 80px;
+
+}
+
+.cta-btn,
+.price-list-btn {
+
+    font-size: 1.5rem;
+
+}
+
+.cta-btn a{
+
+    background-color: var(--color-box);
+    text-decoration: none;
+    color: var(--color-bg);
+    padding: 1.5rem 3rem 1.5rem 3rem ;
+    border-radius: 12px;
+
+
+}
+
+.price-list-btn a {
+
+    color: var(--color-ink);
+
+}
+
+
+.foto-product {
+
+    width: 300px;
+    height: 550px;
 
 }
