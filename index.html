@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="src/style/style.css">
 </head>
 <body>
+    
+    <header class="header-container">
+
+        <div class="brand-label">SAJI</div>
+
+        <nav class="navbar-container">
+
+            <li class="nav-items"><a href="#product">Beranda</a></li>
+            <li class="nav-items"><a href="">Manfaat</a></li>
+            <li class="nav-items"><a href="#harga">Harga</a></li>
+            <li class="nav-items"><a href="">Testimoni</a></li>
+
+        </nav>
+
+    </header>
 
     <main>
 
-        <header class="header-container">
-
-            <div class="brand-label">SAJI</div>
-
-            <nav class="navbar-container">
-
-                <li class="nav-items"><a href="">Produk</a></li>
-                <li class="nav-items"><a href="">Manfaat</a></li>
-                <li class="nav-items"><a href="">Harga</a></li>
-                <li class="nav-items"><a href="">Testimoni</a></li>
-
-            </nav>
-
-        </header>
-
-        <section class="hero-page">
+        <section id="product" class="hero-page">
 
             <div class="main-content">
 
@@ -44,7 +44,7 @@
                 <div class="cta-container">
 
                     <li class="cta-btn"><a href="">Pesan Sekarang</a></li>
-                    <li class="price-list-btn"><a href="">Lihat Paket Harga</a></li>
+                    <li class="price-list-btn"><a href="#harga">Lihat Paket Harga</a></li>
 
                 </div>
 
@@ -57,6 +57,59 @@
                 </figure>
 
             </div>
+
+        </section>
+
+        <section id="harga" class="list-of-product-page">
+
+            <div class="text-container">
+                <h2 class="title-section">PAKET HARGA</h2>
+                <h3 class="packet-label">Pilih Paketmu.</h3>
+                <p class="desc-label">Mulai dari satuan hingga paket hemat untuk kebutuhan rumah.</p>
+            </div>
+
+            <div class="price-list-container">
+
+                <article class="product-price-container">
+
+                    <h4 class="packet-name">Satuan</h4>
+                    <h5 class="price">RP 25.000</h5>
+                    <p class="product-desc">Satu botol 250ml — coba dulu satu. </p>
+
+                    <div class="checkout">
+                        Pilih Paket
+                    </div>
+
+                </article>
+                
+                <article class="product-price-container">
+
+                    <h4 class="packet-name">Paket 3</h4>
+                    <h5 class="price">RP 67.000</h5>
+                    <p class="product-desc">Tiga botol 250ml — hemat Rp 8.000. </p>
+
+                    <div class="checkout">
+                        Pilih Paket
+                    </div>
+                    
+                </article>
+
+                <article class="product-price-container popular-product">
+
+                    <h4 class="packet-name">Paket 6</h4>
+                    <p class="popular-text">Paling Populer</p>
+                    <h5 class="price">RP 129.000</h5>
+                    <p class="product-desc">Enam botol 250ml — hemat Rp 21.000. </p>
+
+                    <div class="checkout">
+                        Pilih Paket
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="credit-text">© Saji — Kopi Susu Rumahan · 2026</p>
 
         </section>
         

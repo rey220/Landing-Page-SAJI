@@ -5,6 +5,7 @@
 --color-bg: #f7f5f0;
 --color-ink: #1b1a17;
 --color-box: #B96A2B;
+--color-text-box: #B96A2B;
 }
 
 
@@ -70,15 +71,14 @@ body {
 }
 
 
-.hero-page {
+.hero-page,
+.list-of-product-page {
 
     margin-left: 5rem;
     margin-right: 5rem;
     display: flex;
     min-height: 100vh;
 
-    
-    
 }
 
 .main-content {
@@ -174,5 +174,132 @@ body {
 
     width: 300px;
     height: 550px;
+
+}
+
+.list-of-product-page {
+
+    flex-direction: column;
+
+}
+
+.text-container {
+
+    margin: 2rem 0 2rem 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-section {
+
+    font-size: 0.80rem;
+    line-height: 18px;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    
+}
+
+.packet-label {
+    
+    font-size: 3.5rem;
+    line-height: 64px;
+    font-weight: 700;
+    
+}
+
+.desc-label {
+    
+    font-size: 0.90rem;
+    font-weight: 500;
+
+}
+
+.price-list-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+
+}
+
+.product-price-container {
+
+    padding: 1rem;
+
+
+}
+
+.packet-name {
+
+    font-size: 1.5rem ;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 1rem;
+    
+}
+
+.price {
+    
+    font-size: 2.2rem ;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 1.75rem;
+    color: var(--color-text-box);
+
+}
+
+.popular-product{
+
+    outline: 2px solid var(--color-box);
+    border-radius: 12px ;
+    padding: 2rem 2rem 3.5rem 2rem;
+
+}
+
+.product-desc {
+
+    font-size: 1rem;
+    line-height: 22px;
+    margin-bottom: 4.3rem;
+
+}
+
+.checkout {
+
+    line-height: 20px;
+    background-color: var(--color-box);
+    color: #f7f5f0;
+    padding: 1rem 5rem 1rem 5rem ;
+    text-align: center;
+    width: 100%;
+    border-radius: 12px;
+    width: 350px;
+}
+
+.popular-text {
+
+    font-size: 0.80rem;
+    line-height: 18px;
+    color: var(--color-text-box);
+    margin-bottom: 0.85rem ;
+    margin-top: -0.70rem;
+    font-weight: 700;
+
+}
+
+.credit-text {
+
+    font-size: 0.85rem;
+    color: #2B2118;
+    line-height: 18px;
+    margin-left: -2.5rem;
+    margin-top: 1.5rem;
+
+    
 
 }
