@@ -2,7 +2,7 @@
 
 :root {
 --font-family: "Archivo", sans-serif;
---color-bg: #f7f5f0;
+--color-bg: #FEFEFE;
 --color-ink: #1b1a17;
 --color-box: #B96A2B;
 --color-text-box: #B96A2B;
@@ -20,7 +20,7 @@
 
 body {
 
-    background-color: #FEFEFE;
+    background-color: var(--color-bg);
 
 }
 
@@ -38,13 +38,13 @@ body {
 
     font-size: 2.5rem;
     line-height: 2.5rem;
-    letter-spacing: 12%;
+    letter-spacing: 0.80em;
     font-weight: 600;
     color: var(--color-ink);
 
 }
 
-.navbar-container {
+.navbar-container ul {
     
     gap: 40px;
     align-items: center;
@@ -279,6 +279,13 @@ body {
     width: 100%;
     border-radius: 12px;
     width: 350px;
+}
+
+.checkout-link {
+
+    text-decoration: none;
+    color: #f7f5f0;
+
 }
 
 .popular-text {
