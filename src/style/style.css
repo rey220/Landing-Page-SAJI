@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anaheim:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=LexendDeca:wght@400;500;600;700&display=swap");
 
 :root {
+--font-nums-family : "Anaheim", sans-serif;
+--font-desc-benefit: "Lexend Deca", sans-serif;
 --font-family: "Archivo", sans-serif;
 --color-bg: #FEFEFE;
 --color-ink: #1b1a17;
@@ -72,7 +76,8 @@ body {
 
 
 .hero-page,
-.list-of-product-page {
+.list-of-product-page,
+.benefit-page {
 
     margin-left: 5rem;
     margin-right: 5rem;
@@ -125,7 +130,7 @@ body {
 
     max-width: 600px;
     min-width: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -307,6 +312,113 @@ body {
     margin-left: -2.5rem;
     margin-top: 1.5rem;
 
-    
+}
+
+.benefit-page {
+
+    flex-direction: column;
+
+}
+
+.headline-benefit-container {
+
+    margin-top: 2.5rem;
+
+}
+
+.benefit-label {
+
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-text-box);
+    line-height: 22px;
+    letter-spacing: 0.12em;
+    margin-bottom: 3rem;
+
+}
+
+.benefit-headline {
+
+    font-size: 4rem ;
+    text-align: center;
+
+}
+
+.benefit-headline span {
+
+    color: var(--color-text-box);
+
+}
+
+.reason-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+    margin-top: 6rem;
+
+}
+
+.reason-container  article {
+
+    width: 335px;
+    height: 255px;
+}
+
+.nums-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nums {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-box);
+    font-size: 2.1rem ;
+    color: #FEFEFE;
+    font-weight: bold;
+    border-radius: 50%;
+    line-height: 22px;
+    font-family: var(--font-nums-family);
+    letter-spacing: 0.05em;
+
+}
+
+.reason-headline-text {
+
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+.reason-headline-text::after {
+
+    content: "";
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--color-box);
+    margin: 15px auto 0;
+
+}
+
+.reason-desc {
+
+    text-align: center;
+    width: 350px;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    font-family: var(--font-desc-benefit) ;
+    font-weight: 400;
 
 }
