@@ -79,8 +79,8 @@ body {
 .list-of-product-page,
 .benefit-page {
 
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     display: flex;
     min-height: 100vh;
 
@@ -143,7 +143,7 @@ body {
 
 }
 
-.cta-container {
+.cta-container ul {
 
     display: flex;
     gap: 80px;
@@ -361,12 +361,6 @@ body {
 
 }
 
-.reason-container  article {
-
-    width: 335px;
-    height: 255px;
-}
-
 .nums-container {
 
     display: flex;
@@ -415,7 +409,6 @@ body {
 .reason-desc {
 
     text-align: center;
-    width: 350px;
     font-size: 1.4rem;
     margin-top: 3rem;
     font-family: var(--font-desc-benefit) ;
