@@ -5,6 +5,7 @@
 :root {
 --font-nums-family : "Anaheim", sans-serif;
 --font-desc-benefit: "Lexend Deca", sans-serif;
+--font-desc-testimoni: "Lexend Deca", sans-serif;
 --font-family: "Archivo", sans-serif;
 --color-bg: #FEFEFE;
 --color-ink: #1b1a17;
@@ -77,7 +78,8 @@ body {
 
 .hero-page,
 .list-of-product-page,
-.benefit-page {
+.benefit-page,
+.testimonial-page {
 
     margin-left: 4rem;
     margin-right: 4rem;
@@ -413,5 +415,120 @@ body {
     margin-top: 3rem;
     font-family: var(--font-desc-benefit) ;
     font-weight: 400;
+
+}
+
+.testimonial-page {
+
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.testimonial-headline-container {
+
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.testimonial-label{
+
+    text-align: center;
+    letter-spacing: 0.15em;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--color-text-box);
+    font-size: 1.7rem ;
+    margin-bottom: 3.6rem;
+    
+}
+
+.testimonial-headline-text {
+    
+    text-align: center;
+    line-height: 30px;
+    font-size: 3.75rem;
+    font-weight: 600;
+
+}
+
+.testimonial-headline-text span {
+
+    color: var(--color-text-box);
+
+}
+
+.testimoni-container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.testimoni-text-container {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.testimoni-text-container + .testimoni-text-container {
+
+    border-left: 1px solid  #E5E0D8;
+    padding-left: 30px;
+
+}
+
+.testimoni-text-container span {
+
+    color: var(--color-text-box);
+    font-size: 10rem;
+    font-family: var(--font-family);
+
+}
+
+.testimoni-comment {
+
+    font-size: 1.4rem;
+    line-height: 30px;
+    width: 85%;
+    font-family: var(--font-desc-testimoni);
+
+}
+
+.user-testimoni {
+
+    font-size: 2.1rem;
+    line-height: 30px;
+
+}
+
+.user-packet {
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text-box);
+    line-height: 30px;
+
+}
+
+.user-packet::after{
+
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: var(--color-box);
+    margin: 15px auto 0;
+
+
+
 
 }
