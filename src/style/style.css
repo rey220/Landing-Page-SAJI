@@ -306,16 +306,6 @@ body {
 
 }
 
-.credit-text {
-
-    font-size: 0.85rem;
-    color: #2B2118;
-    line-height: 18px;
-    margin-left: -2.5rem;
-    margin-top: 1.5rem;
-
-}
-
 .benefit-page {
 
     flex-direction: column;
@@ -420,7 +410,6 @@ body {
 
 .testimonial-page {
 
-    align-items: center;
     flex-direction: column;
 
 }
@@ -488,8 +477,9 @@ body {
 
 .testimoni-text-container span {
 
+    line-height: 0.6;
     color: var(--color-text-box);
-    font-size: 10rem;
+    font-size: 8rem;
     font-family: var(--font-family);
 
 }
@@ -528,7 +518,15 @@ body {
     background-color: var(--color-box);
     margin: 15px auto 0;
 
+}
 
+.credit-text {
 
+    text-align: left;
+    font-size: 0.85rem;
+    color: #2B2118;
+    line-height: 18px;
+    margin-left: -2.5rem;
+    margin-top: 2rem;
 
 }
