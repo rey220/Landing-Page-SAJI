@@ -79,7 +79,7 @@ body {
 .hero-page,
 .list-of-product-page,
 .benefit-page,
-.testimonial-page {
+.testimonial-page{
 
     margin-left: 4rem;
     margin-right: 4rem;
@@ -530,3 +530,240 @@ body {
     margin-top: 2rem;
 
 }
+
+.checkout-page {
+
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    min-height: 100vh;
+
+}
+
+.checkout-headline {
+
+    font-size: 1.8rem;
+    color: var(--color-text-box);
+    line-height: 30px;
+    text-align: center;
+
+}
+
+.content-container {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    
+
+}
+
+.package-label,
+.total-label,
+.checkout-label {
+
+    font-size: 3.1rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.package-container {
+
+    margin-top: 6rem;
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+
+}
+
+.price-label {
+
+    font-size: 2.2rem;
+    line-height: 45px;
+    font-weight: 600;
+
+}
+
+.desc-price {
+    
+    font-size: 1.25rem;
+    line-height: 30px;
+    
+}
+
+.package-price-container:last-child .price-label,
+.package-price-container:last-child .desc-price {
+
+    color: var(--color-text-box);
+    
+}
+
+.package-price-container + .package-price-container {
+
+    border-left: 1px solid #E5E0D8 ;
+    padding-left: 30px;
+    
+}
+
+.total-label {
+
+    margin-top: 5rem ;
+
+}
+
+.calculation-product {
+
+    text-align: center;
+    font-size: 2.8rem ;
+    margin-top: 3.2rem ;
+    height: 70px;
+    border-top: 2px solid #E5E0D8 ;
+    border-bottom: 2px solid #E5E0D8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculation-product span {
+    
+   
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.right-content {
+
+    width: 500px;
+
+}
+
+.right-content form {
+
+    margin-top: 1.75rem;
+
+}
+
+.right-content form input {
+
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #E5E0D8;
+
+}
+
+.right-content form label,
+.right-content form p input {
+
+    font-size: 1.2rem ;
+    line-height: 30px;
+    font-weight: 300;
+
+} 
+
+.right-content form p {
+
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+
+
+}
+
+.right-content form {
+
+    margin-bottom: 1.75rem;
+
+}
+
+.total-price-container {
+
+    border-top: 2px solid #E5E0D8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label-total-checkout {
+
+    font-size: 1.7rem ;
+    margin-top: 1rem;
+    margin-bottom: 0.4em;
+
+}
+
+.total-package-checkout,
+.subtotal-package,
+.total-checkout {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.total-price-container p:first-child {
+
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+}
+
+.total-price-container p:last-child {
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+.total-package-checkout {
+
+    margin-bottom: 0.5em;
+
+}
+
+.subtotal-package {
+
+    padding: 0.4em 0 0.4em 0;
+    border-top: 1px solid #E5E0D8;
+    border-bottom: 1px solid #E5E0D8;
+}
+
+.total-checkout {
+
+    margin-top: 0.5em;
+    margin-bottom: 1.25rem;
+}
+
+.total-checkout p:first-child {
+    
+    font-weight: 700;
+
+}
+
+.agg-link {
+
+    font-size: 1.8rem;
+    line-height: 30px;
+    padding: 1.25rem 0 1.25rem 0;
+    background-color: var(--color-box);
+    border-radius: 50px;
+    border: none;
+    color: var(--color-bg);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+
+}
+
+.form-link {
+
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-ink);
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
