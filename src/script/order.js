@@ -5,7 +5,7 @@
 // TODO: ganti nomor di bawah dengan nomor WhatsApp penjual yang asli.
 // Formatnya: kode negara tanpa tanda +, tanpa 0 di depan. Contoh: 62812xxxx.
 // Jangan pakai spasi atau tanda - di dalam nomor.
-const NOMOR_PENJUAL = "6281234567890";
+const NOMOR_PENJUAL = "628996946557";
 
 // Daftar paket, kuncinya sama dengan data-paket di order.html
 // dan sama dengan ?paket= di link "Pilih Paket" pada index.html.
