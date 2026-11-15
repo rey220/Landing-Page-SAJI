@@ -67,21 +67,28 @@ body {
 }
 
 .nav-items a {
-
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--color-ink);
     font-weight: 500;
-    padding: 0.5em 0;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s ease;
-    
+    padding: 0.7em 0;
+    position: relative;
 }
 
-.nav-items a:hover {
+.nav-items a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
 
-    border-bottom-color: var(--color-text-box);
-
+.nav-items a:hover::after {
+    background-color: var(--color-text-box);
 }
 
 .hero-page,
