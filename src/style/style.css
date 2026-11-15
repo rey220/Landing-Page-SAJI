@@ -276,16 +276,27 @@ body {
 
 }
 
+/* .checkout sekarang cuma bungkus penentu lebar.
+   Tombol yang asli adalah link di dalamnya — jadi semua gaya tombol
+   (warna, padding, radius) harus ada di link, bukan di bungkusnya.
+   Kalau gaya tombol tetap di div, yang bisa diklik cuma teksnya saja,
+   karena padding dan warna itu milik div, bukan milik link. */
 .checkout {
 
-    line-height: 20px;
+    width: 350px;
+
+}
+
+.checkout-link {
+
+    display: block;
     background-color: var(--color-box);
     color: #f7f5f0;
-    padding: 1rem 5rem 1rem 5rem ;
-    text-align: center;
-    width: 100%;
+    padding: 1rem 5rem 1rem 5rem;
     border-radius: 12px;
-    width: 350px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
     cursor: pointer;
     /* transition: perubahan ukuran saat klik dibuat halus (smooth),
        bukan langsung loncat. Hanya transform yang dianimasikan. */
@@ -294,24 +305,16 @@ body {
 }
 
 /* Kursor di atas tombol: membesar sedikit. */
-.checkout:hover {
+.checkout-link:hover {
 
     transform: scale(1.03);
 
 }
 
 /* Tombol sedang diklik: membesar sedikit lagi, lalu kembali saat dilepas. */
-.checkout:active {
+.checkout-link:active {
 
     transform: scale(1.06);
-
-}
-
-.checkout-link {
-
-    display: block;
-    text-decoration: none;
-    color: #f7f5f0;
 
 }
 
