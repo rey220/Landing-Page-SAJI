@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order</title>
-    <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/order.js" defer></script>
 </head>
 <body>
 
@@ -18,49 +19,49 @@
 
                 <div class="left-content">
                 
-                    <h2 class="package-label">— Pilih Paket</h2>
+                    <h2 class="package-label">Langkah 1 — Pilih Paket</h2>
                     
                     <div class="package-container">
         
-                        <article class="package-price-container">
-                            <h3 class="price-label">Satuan <br>Rp 25.000</h3>
-                            <p class="desc-price">Satu botol 250ml <br>—coba dulu satu </p>
+                        <article class="package-price-container" data-paket="satuan" tabindex="0">
+                            <h3 class="price-label">Satuan <br><span class="price-value">Rp 25.000</span></h3>
+                            <p class="desc-price">Satu botol 250ml <br>— coba dulu satu </p>
                         </article>
                         
-                        <article class="package-price-container">
-                            <h3 class="price-label">Paket 3 <br>Rp 25.000</h3>
-                            <p class="desc-price">Satu botol 250ml <br>hemat Rp 6.000 </p>
+                        <article class="package-price-container" data-paket="paket-3" tabindex="0">
+                            <h3 class="price-label">Paket 3 <br><span class="price-value">Rp 69.000</span></h3>
+                            <p class="desc-price">Tiga botol 250ml <br>hemat Rp 6.000 </p>
                         </article>
                         
-                        <article class="package-price-container">
-                            <h3 class="price-label">Paket 6 <br>Rp 129.000</h3>
-                            <p class="desc-price">Enam botol 250ml —<br>hemat Rp 21.000 — <br>Paling Populer </p>
+                        <article class="package-price-container selected" data-paket="paket-6" tabindex="0">
+                            <h3 class="price-label">Paket 6 <br><span class="price-value">Rp 129.000</span></h3>
+                            <p class="desc-price">Enam botol 250ml —<br>hemat Rp 21.000 — <br><span class="popular-text">Paling Populer</span> </p>
                         </article>
         
                     </div>
 
-                    <h2 class="total-label">— Jumlah Paket</h2>
-                    <p class="calculation-product"><span>-</span>1<span>+</span></p>
+                    <h2 class="total-label">Langkah 2 — Jumlah Paket</h2>
+                    <p class="calculation-product"><button type="button" id="btn-kurang" aria-label="Kurangi jumlah">-</button><span id="jumlah-nilai">1</span><button type="button" id="btn-tambah" aria-label="Tambah jumlah">+</button></p>
                 
                 </div>
             
                 <div class="right-content">
                     
-                    <h2 class="checkout-label">— Data Pemesan</h2>
+                    <h2 class="checkout-label">Langkah 3 — Data Pemesan</h2>
 
-                    <form action="">
-                        <label for="">Nama Pemesan</label>
+                    <form id="form-pesan">
+                        <label for="nama">Nama Pemesan</label>
                         <p>
-                            <input type="text" placeholder="Contoh : Andi Pratama">
+                            <input type="text" id="nama" name="nama" placeholder="Contoh : Andi Pratama" required>
                         </p>
-                        <label for="">Nomor WhatsApp</label>
+                        <label for="wa">Nomor WhatsApp</label>
                         <p>
-                            <input type="number" placeholder="Contoh : 08xx xxxx xxxx">
+                            <input type="tel" id="wa" name="wa" inputmode="tel" autocomplete="tel" placeholder="Contoh : 08xx xxxx xxxx" required>
                         </p>
 
-                        <label for="">Catatan (opsional)</label>
+                        <label for="catatan">Catatan (opsional)</label>
                         <p>
-                            <input type="text" placeholder="Tanpa gula, kirim ke kantor setelah jam makan siang.">
+                            <input type="text" id="catatan" name="catatan" placeholder="Tanpa gula, kirim ke kantor setelah jam makan siang.">
                         </p>
                     </form>
 
@@ -71,24 +72,24 @@
                         <div>
 
                             <div class="total-package-checkout">
-                                <p>Paket 6 x 1</p>
-                                <p>Rp 129.00</p>
+                                <p id="ringkasan-paket">Paket 6 x 1</p>
+                                <p id="ringkasan-harga">Rp 129.000</p>
                             </div>
                             
                             <div class="subtotal-package">
                                 <p>Subtotal</p>
-                                <p>Rp 129.00</p>
+                                <p id="subtotal-harga">Rp 129.000</p>
                             </div>
                             
                             <div class="total-checkout">
                                 <p>Total</p>
-                                <p>Rp 129.00</p>
+                                <p id="total-harga">Rp 129.000</p>
                             </div>
 
                         </div>
 
-                        <button type="submit" class="agg-link">Pesan Via WhatsApp</button>
-                        <a class="form-link" href="">Atau chat langsung tanpa isi form</a>
+                        <button type="button" id="btn-pesan" class="agg-link">Pesan Via WhatsApp</button>
+                        <a class="form-link" id="chat-langsung" href="">Atau chat langsung tanpa isi form</a>
 
                     </div>
 
