@@ -156,6 +156,8 @@ body {
 .price-list-btn {
 
     font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 
 }
 
@@ -173,6 +175,24 @@ body {
 .price-list-btn a {
 
     color: var(--color-ink);
+}
+
+.price-list-btn a:hover {
+
+    border-radius: 10px;
+    padding: 1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    background-color: #2BCC5E;
+    font-weight: 500;
+    color: var(--color-bg);
+    cursor: pointer;
+    transition: transform 0.10s ease;
+
+}
+
+.price-list-btn:hover {
+
+    transform: scale(1.2);
 
 }
 
@@ -276,11 +296,6 @@ body {
 
 }
 
-/* .checkout sekarang cuma bungkus penentu lebar.
-   Tombol yang asli adalah link di dalamnya — jadi semua gaya tombol
-   (warna, padding, radius) harus ada di link, bukan di bungkusnya.
-   Kalau gaya tombol tetap di div, yang bisa diklik cuma teksnya saja,
-   karena padding dan warna itu milik div, bukan milik link. */
 .checkout {
 
     width: 350px;
@@ -298,21 +313,19 @@ body {
     text-decoration: none;
     line-height: 20px;
     cursor: pointer;
-    /* transition: perubahan ukuran saat klik dibuat halus (smooth),
-       bukan langsung loncat. Hanya transform yang dianimasikan. */
     transition: transform 0.2s ease;
 
 }
 
-/* Kursor di atas tombol: membesar sedikit. */
-.checkout-link:hover {
+.checkout-link:hover,
+.cta-container ul .cta-btn:first-child:hover {
 
     transform: scale(1.03);
 
 }
 
-/* Tombol sedang diklik: membesar sedikit lagi, lalu kembali saat dilepas. */
-.checkout-link:active {
+.checkout-link:active,
+.cta-container ul .cta-btn:first-child:hover {
 
     transform: scale(1.06);
 
@@ -576,17 +589,12 @@ body {
 
     display: flex;
     justify-content: space-between;
-    /* stretch: kedua kolom ditarik setinggi kolom yang paling tinggi,
-       jadi kiri dan kanan seimbang seperti di desain. */
     align-items: stretch;
     margin-top: 4rem;
     
 
 }
 
-/* Kolom kiri jadi kolom flex, supaya Jumlah Paket bisa didorong ke bawah.
-   border-right di sini adalah garis vertikal pemisah kiri-kanan:
-   tingginya mengikuti kolom kiri yang sudah ditarik setinggi kolom kanan. */
 .left-content {
 
     display: flex;
@@ -673,11 +681,7 @@ body {
 
 .total-label {
 
-    /* margin-top: auto menyerap semua ruang kosong di tengah kolom kiri,
-       jadi Jumlah Paket terdorong ke bawah dan sejajar dengan kolom kanan.
-       padding-top 6rem menjaga jarak minimal yang Rey atur sebelumnya. */
-    margin-top: auto;
-    padding-top: 6rem;
+    margin-top: 7rem;
 
 }
 
