@@ -325,7 +325,7 @@ body {
 }
 
 .checkout-link:active,
-.cta-container ul .cta-btn:first-child:hover {
+.cta-container ul .cta-btn:first-child:active {
 
     transform: scale(1.06);
 
