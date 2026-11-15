@@ -286,10 +286,30 @@ body {
     width: 100%;
     border-radius: 12px;
     width: 350px;
+    cursor: pointer;
+    /* transition: perubahan ukuran saat klik dibuat halus (smooth),
+       bukan langsung loncat. Hanya transform yang dianimasikan. */
+    transition: transform 0.2s ease;
+
+}
+
+/* Kursor di atas tombol: membesar sedikit. */
+.checkout:hover {
+
+    transform: scale(1.03);
+
+}
+
+/* Tombol sedang diklik: membesar sedikit lagi, lalu kembali saat dilepas. */
+.checkout:active {
+
+    transform: scale(1.06);
+
 }
 
 .checkout-link {
 
+    display: block;
     text-decoration: none;
     color: #f7f5f0;
 
@@ -553,9 +573,23 @@ body {
 
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    /* stretch: kedua kolom ditarik setinggi kolom yang paling tinggi,
+       jadi kiri dan kanan seimbang seperti di desain. */
+    align-items: stretch;
     margin-top: 4rem;
     
+
+}
+
+/* Kolom kiri jadi kolom flex, supaya Jumlah Paket bisa didorong ke bawah.
+   border-right di sini adalah garis vertikal pemisah kiri-kanan:
+   tingginya mengikuti kolom kiri yang sudah ditarik setinggi kolom kanan. */
+.left-content {
+
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #E5E0D8;
+    padding-right: 30px;
 
 }
 
@@ -636,7 +670,11 @@ body {
 
 .total-label {
 
-    margin-top: 6rem ;
+    /* margin-top: auto menyerap semua ruang kosong di tengah kolom kiri,
+       jadi Jumlah Paket terdorong ke bawah dan sejajar dengan kolom kanan.
+       padding-top 6rem menjaga jarak minimal yang Rey atur sebelumnya. */
+    margin-top: auto;
+    padding-top: 6rem;
 
 }
 
