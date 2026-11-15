@@ -1,9 +1,8 @@
 // order.js — pemantik interaksi halaman Pesan Saji.
 // Tugas file ini cuma tiga: baca isi form, hitung total, lalu rangkai link wa.me.
-// Saji adalah produk fiktif, jadi nomor penjual di bawah masih contoh.
 
-// TODO: ganti nomor di bawah dengan nomor WhatsApp penjual yang asli.
-// Formatnya: kode negara tanpa tanda +, tanpa 0 di depan. Contoh: 62812xxxx.
+// Nomor WhatsApp penjual yang menerima pesanan.
+// Formatnya: kode negara tanpa tanda +, tanpa 0 di depan.
 // Jangan pakai spasi atau tanda - di dalam nomor.
 const NOMOR_PENJUAL = "628996946557";
 
