@@ -989,3 +989,551 @@ body {
     padding-right: 4rem;
 
 }
+
+@media (max-width: 1180px) {
+    .hero-page,
+    .list-of-product-page,
+    .benefit-page,
+    .testimonial-page {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .header-container {
+        margin: 2rem 2.5rem;
+    }
+
+    .brand-label {
+        letter-spacing: 0.60em;
+    }
+
+    .headline-text {
+        font-size: 3.9rem;
+        line-height: 70px;
+    }
+
+    .intro-desc {
+        font-size: 1.4rem;
+        line-height: 32px;
+    }
+
+    .intro-container {
+        margin-bottom: 3rem;
+    }
+
+    .cta-container ul {
+        gap: 40px;
+    }
+
+    .price-list-btn a {
+        display: inline-block;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        background-color: rgba(185, 106, 43, 0.12);
+        color: #8A4E1F;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .price-list-btn a:hover {
+        background-color: rgba(185, 106, 43, 0.18);
+        color: #8A4E1F;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        border-radius: 12px;
+        font-weight: 500;
+    }
+
+    .price-list-btn:hover {
+        transform: none;
+    }
+
+    .price-list-btn a:active {
+        opacity: 0.7;
+    }
+
+    .foto-product {
+        width: 260px;
+        height: 477px;
+    }
+
+    .packet-label {
+        font-size: 3rem;
+        line-height: 56px;
+    }
+
+    .price-list-container {
+        gap: 20px;
+    }
+
+    .checkout {
+        width: 300px;
+    }
+
+    .checkout-link {
+        padding: 1rem 3rem;
+    }
+
+    .benefit-headline {
+        font-size: 3.2rem;
+    }
+
+    .reason-container {
+        gap: 40px;
+    }
+
+    .testimoni-container {
+        gap: 30px;
+    }
+
+    .testimonial-headline-text {
+        font-size: 3rem;
+    }
+
+    .brand-label-footer {
+        font-size: 9rem;
+    }
+
+    .second-label-footer {
+        font-size: 2.3rem;
+    }
+
+    .footer-page {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .footer-main-container {
+        margin-bottom: 7rem;
+    }
+
+    .items-navbar-container ul:nth-last-of-type(2) {
+        margin: 0 2.5rem;
+    }
+
+    .items-footer-container {
+        margin-left: -2.5rem;
+        margin-right: -2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .checkout-page {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .right-content {
+        width: 420px;
+    }
+
+    .package-label,
+    .total-label,
+    .checkout-label {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-page,
+    .list-of-product-page,
+    .benefit-page,
+    .testimonial-page {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        min-height: auto;
+    }
+
+    .header-container {
+        margin: 1.5rem;
+    }
+
+    .brand-label {
+        font-size: 1.9rem;
+        letter-spacing: 0.35em;
+    }
+
+    .navbar-container ul {
+        gap: 20px;
+    }
+
+    .nav-items a {
+        font-size: 1rem;
+    }
+
+    .hero-page {
+        flex-direction: column;
+    }
+
+    .second-label {
+        margin-top: 2rem;
+    }
+
+    .headline-text {
+        font-size: 3rem;
+        line-height: 52px;
+    }
+
+    .intro-desc {
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+    .cta-container ul {
+        gap: 24px;
+    }
+
+    .foto-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    .foto-product {
+        width: 240px;
+        height: 440px;
+    }
+
+    .packet-label {
+        font-size: 2.6rem;
+        line-height: 48px;
+    }
+
+    .price-list-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .product-price-container {
+        max-width: 480px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .checkout {
+        width: 100%;
+    }
+
+    .benefit-headline {
+        font-size: 2.6rem;
+    }
+
+    .reason-container {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .reason-headline-text {
+        font-size: 1.9rem;
+    }
+
+    .reason-desc {
+        font-size: 1.15rem;
+    }
+
+    .testimonial-headline-text {
+        font-size: 2.4rem;
+    }
+
+    .testimonial-label {
+        font-size: 1.3rem;
+    }
+
+    .testimoni-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .testimoni-text-container + .testimoni-text-container {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid #E5E0D8;
+        padding-top: 2.5rem;
+    }
+
+    .testimoni-text-container span {
+        font-size: 6rem;
+    }
+
+    .testimoni-comment {
+        font-size: 1.15rem;
+    }
+
+    .user-testimoni {
+        font-size: 1.6rem;
+    }
+
+    .credit-text {
+        margin-left: 0;
+    }
+
+    .footer-page {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .footer-main-container {
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .brand-label-footer {
+        font-size: 6.5rem;
+    }
+
+    .second-label-footer {
+        font-size: 1.8rem;
+    }
+
+    .items-navbar-container {
+        justify-content: flex-start;
+        gap: 2.5rem;
+    }
+
+    .items-navbar-container ul:nth-last-of-type(2) {
+        margin: 0;
+    }
+
+    .items-navbar-container ul li {
+        margin-bottom: 1.8rem;
+    }
+
+    .items-footer-container {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .checkout-page {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .content-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .left-content {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #E5E0D8;
+        padding-bottom: 2rem;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+    .package-label,
+    .total-label,
+    .checkout-label {
+        font-size: 2.1rem;
+    }
+
+    .total-label {
+        margin-top: 3rem;
+    }
+
+    .calculation-product {
+        gap: 2rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-page,
+    .list-of-product-page,
+    .benefit-page,
+    .testimonial-page {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .header-container {
+        margin: 1.25rem;
+    }
+
+    .brand-label {
+        font-size: 1.6rem;
+    }
+
+    .navbar-container {
+        display: none;
+    }
+
+    .headline-text {
+        font-size: 2.4rem;
+        line-height: 44px;
+    }
+
+    .intro-desc {
+        font-size: 1.05rem;
+        line-height: 26px;
+    }
+
+    .intro-container {
+        margin-bottom: 2.5rem;
+    }
+
+    .cta-container ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .cta-btn a {
+        display: block;
+        text-align: center;
+        padding: 1.1rem 1.5rem;
+    }
+
+    .price-list-btn {
+        text-align: center;
+    }
+
+    .price-list-btn a {
+        display: block;
+        text-align: center;
+        padding: 1.1rem 1.5rem;
+    }
+
+    .foto-product {
+        width: 200px;
+        height: 367px;
+    }
+
+    .packet-label {
+        font-size: 2rem;
+        line-height: 38px;
+    }
+
+    .price {
+        font-size: 1.9rem;
+    }
+
+    .product-desc {
+        margin-bottom: 2.5rem;
+    }
+
+    .checkout-link {
+        padding: 1rem 2rem;
+    }
+
+    .benefit-label {
+        font-size: 1.6rem;
+    }
+
+    .benefit-headline {
+        font-size: 2.1rem;
+    }
+
+    .nums {
+        width: 56px;
+        height: 56px;
+        font-size: 1.7rem;
+    }
+
+    .reason-headline-text {
+        font-size: 1.6rem;
+    }
+
+    .reason-desc {
+        font-size: 1.05rem;
+    }
+
+    .testimonial-headline-text {
+        font-size: 2rem;
+    }
+
+    .testimonial-label {
+        font-size: 1.1rem;
+    }
+
+    .testimoni-text-container span {
+        font-size: 4.5rem;
+    }
+
+    .testimoni-comment {
+        font-size: 1.05rem;
+    }
+
+    .user-testimoni {
+        font-size: 1.35rem;
+    }
+
+    .user-packet {
+        font-size: 1.2rem;
+    }
+
+    .footer-page {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .brand-label-footer {
+        font-size: 4rem;
+    }
+
+    .second-label-footer {
+        font-size: 1.4rem;
+    }
+
+    .items-navbar-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .items-navbar-container ul li {
+        margin-bottom: 1.4rem;
+    }
+
+    .items-footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        height: auto;
+        padding: 1.5rem 1.25rem;
+        margin-left: -1.25rem;
+        margin-right: -1.25rem;
+    }
+
+    .checkout-page {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .package-label,
+    .total-label,
+    .checkout-label {
+        font-size: 1.8rem;
+    }
+
+    .package-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .package-price-container + .package-price-container {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .price-label {
+        font-size: 1.8rem;
+    }
+
+    .calculation-product {
+        font-size: 1.8rem;
+        gap: 1.5rem;
+    }
+
+    .agg-link {
+        font-size: 1.4rem;
+    }
+}
