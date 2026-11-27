@@ -529,7 +529,7 @@ body {
 
 }
 
-.testimoni-text-container span {
+.testimoni-text-container > span {
 
     line-height: 0.6;
     color: var(--color-text-box);
@@ -1253,7 +1253,7 @@ body {
         padding-top: 2.5rem;
     }
 
-    .testimoni-text-container span {
+    .testimoni-text-container > span {
         font-size: 6rem;
     }
 
@@ -1455,7 +1455,7 @@ body {
         font-size: 1.1rem;
     }
 
-    .testimoni-text-container span {
+    .testimoni-text-container > span {
         font-size: 4.5rem;
     }
 
@@ -1536,4 +1536,83 @@ body {
     .agg-link {
         font-size: 1.4rem;
     }
+}
+
+.js-animations .reveal {
+    opacity: 0;
+    transform: translateY(56px);
+    transition: opacity 0.95s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: opacity, transform;
+}
+
+.js-animations .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js-animations .word-blur {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(16px);
+    transition: opacity 0.7s ease, filter 0.7s ease, transform 0.7s ease;
+    will-change: opacity, filter, transform;
+}
+
+.js-animations .word-blur.is-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.js-animations .slide-left {
+    opacity: 0;
+    transform: translateX(-88px);
+    transition: opacity 0.95s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: opacity, transform;
+}
+
+.js-animations .slide-up {
+    opacity: 0;
+    transform: translateY(56px);
+    transition: opacity 0.95s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: opacity, transform;
+}
+
+.js-animations .slide-right {
+    opacity: 0;
+    transform: translateX(88px);
+    transition: opacity 0.95s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: opacity, transform;
+}
+
+.js-animations .slide-left.is-visible,
+.js-animations .slide-up.is-visible,
+.js-animations .slide-right.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.js-animations .zoom-card {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.95s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+    will-change: opacity, transform;
+}
+
+.js-animations .zoom-popular {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.95s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.95s cubic-bezier(0.34, 1.56, 0.64, 1);
+    will-change: opacity, transform;
+}
+
+.js-animations .zoom-card.is-visible,
+.js-animations .zoom-popular.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+html, body {
+    overflow-x: hidden;
 }
