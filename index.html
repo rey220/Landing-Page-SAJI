@@ -114,7 +114,7 @@
 
             <div class="price-list-container">
 
-                <article class="product-price-container">
+                <article class="product-price-container" data-paket="satuan">
 
                     <h4 class="packet-name">Satuan</h4>
                     <h5 class="price">RP 25.000</h5>
@@ -126,7 +126,7 @@
 
                 </article>
                 
-                <article class="product-price-container">
+                <article class="product-price-container" data-paket="paket-3">
 
                     <h4 class="packet-name">Paket 3</h4>
                     <h5 class="price">RP 69.000</h5>
@@ -138,7 +138,7 @@
                     
                 </article>
 
-                <article class="product-price-container popular-product">
+                <article class="product-price-container popular-product" data-paket="paket-6">
 
                     <h4 class="packet-name">Paket 6</h4>
                     <p class="popular-text">Paling Populer</p>
@@ -213,9 +213,9 @@
 
                     <ul class="items-product-container">
                         <li class="first-items-navbar-list">Produk</li>
-                        <li><a class="harga-paket-satuan-label" href="#harga">Satuan</a></li>
-                        <li><a class="harga-paket3-label" href="#harga">Paket 3</a></li>
-                        <li><a class="harga-paket-6-label" href="#harga">Paket 6</a></li>
+                        <li><a class="harga-paket-satuan-label" href="#harga" data-paket="satuan">Satuan</a></li>
+                        <li><a class="harga-paket3-label" href="#harga" data-paket="paket-3">Paket 3</a></li>
+                        <li><a class="harga-paket-6-label" href="#harga" data-paket="paket-6">Paket 6</a></li>
                     </ul>
                     
                     <ul class="items-explore-container">
@@ -245,5 +245,6 @@
 
     </main>
 
+    <script src="src/script/pricing-highlight.js"></script>
 </body>
 </html>
