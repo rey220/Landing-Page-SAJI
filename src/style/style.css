@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anaheim:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=LexendDeca:wght@400;500;600;700&display=swap");
 
 :root {
+--font-items-list-footer : "Roboto";
 --font-nums-family : "Anaheim", sans-serif;
 --font-desc-benefit: "Lexend Deca", sans-serif;
 --font-desc-testimoni: "Lexend Deca", sans-serif;
@@ -60,7 +62,8 @@ body {
 
 .nav-items,
 .cta-btn,
-.price-list-btn {
+.price-list-btn,
+.items-navbar-container ul li {
 
     list-style: None;
 
@@ -868,3 +871,121 @@ body {
 
 }
 
+.footer-page {
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-main-container {
+
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+.brand-label-footer {
+
+    font-size: 15.5rem;
+    font-family: var(--font-family);
+    font-weight: 500 ;
+    line-height: auto;
+    letter-spacing: 0.10em;
+    
+}
+
+.second-label-footer {
+    
+    font-size: 3.7rem;
+    font-family: var(--font-family);
+    font-weight: 300;
+    line-height: auto;
+    letter-spacing: 0.08em;
+
+}
+
+.items-navbar-container {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.items-navbar-container ul:nth-last-of-type(2) {
+
+    margin: 0 5rem 0 5rem;
+
+}
+
+.first-items-navbar-list {
+
+    margin-bottom: 2.7rem;
+    color: #999292;
+
+}
+
+.items-navbar-container ul li  {
+
+    margin-bottom: 3.1rem;
+    
+}
+
+.harga-paket-satuan-label,
+.harga-paket3-label,
+.harga-paket-6-label,
+.items-home-label,
+.items-manfaat-label,
+.items-harga-label,
+.items-testi-label,
+.items-checkout-label{
+    
+    color: #1b1a17;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+
+.checkout-aggregator-label {
+    
+    text-decoration: underline;
+    color: var(--color-box);
+
+}
+
+
+.items-navbar-container li {
+
+    font-size: 1.10rem;
+    font-family: var(--font-items-list-footer);
+    font-weight: 600;
+    letter-spacing: 0.10em;
+    line-height: auto;
+
+}
+
+
+.items-footer-container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    border-top: 1px solid #E5E0D8;
+    width: auto;
+    height: 150px;
+    margin-left: -4rem;
+    margin-right: -4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+}
