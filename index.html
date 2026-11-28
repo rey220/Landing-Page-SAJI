@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAJI | Kopi Susu Rumahan </title>
     <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/animations.css">
+    <meta name="description" content="Saji — kopi susu rumahan 250ml. Dibuat dengan kopi pilihan dan susu segar, racikan rumahan tanpa pengawet, manis pas.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SAJI | Kopi Susu Rumahan">
+    <meta property="og:description" content="Kopi susu yang dibuat pagi, diminum siang. Dibuat tiap pagi, dikirim dingin, takaran pas.">
+    <meta property="og:image" content="src/resources/foto-produk.webp">
+    <meta property="og:image:alt" content="Botol kopi susu Saji 250ml">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SAJI | Kopi Susu Rumahan">
+    <meta name="twitter:description" content="Kopi susu yang dibuat pagi, diminum siang. Dibuat tiap pagi, dikirim dingin, takaran pas.">
+    <meta name="twitter:image" content="src/resources/foto-produk.webp">
+    <link rel="icon" type="image/svg+xml" href="src/resources/favicon.svg">
 </head>
 <body>
     
@@ -22,6 +34,12 @@
             </ul>
                 
         </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
     </header>
 
@@ -194,8 +212,6 @@
                 
             </div>
 
-            <p class="credit-text">© Saji — Kopi Susu Rumahan · 2026</p>
-
         </section>
 
         <footer class="footer-page">
@@ -228,7 +244,7 @@
                     
                     <ul class="items-checkout-container">
                         <li class="first-items-navbar-list">Pesan</li>
-                        <li><a class="items-checkout-label" href="/src/pages/order.html">Pesan Sekarang</a></li>
+                        <li><a class="items-checkout-label" href="src/pages/order.html">Pesan Sekarang</a></li>
                         <li><a id="chat-langsung" class="checkout-aggregator-label" href="https://wa.me/628996946557?text=Halo%20Saji%2C%20saya%20mau%20tanya-tanya%20dulu.">Pesan via WhatsApp</a></li>
                     </ul>
 
@@ -247,5 +263,6 @@
 
     <script src="src/script/pricing-highlight.js"></script>
     <script src="src/script/animations.js"></script>
+    <script src="src/script/menu.js"></script>
 </body>
 </html>

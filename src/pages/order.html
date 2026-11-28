@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+    <title>Pesan | Saji — Kopi Susu Rumahan</title>
     <link rel="stylesheet" href="../style/style.css">
+    <meta name="description" content="Pesan kopi susu Saji — Satuan Rp25.000, Paket 3 Rp69.000, Paket 6 Rp129.000. Pilih paket, isi data, pesan langsung via WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pesan | Saji — Kopi Susu Rumahan">
+    <meta property="og:description" content="Pesan kopi susu Saji — Satuan Rp25.000, Paket 3 Rp69.000, Paket 6 Rp129.000.">
+    <meta property="og:image" content="../resources/foto-produk.webp">
+    <meta property="og:image:alt" content="Botol kopi susu Saji 250ml">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pesan | Saji — Kopi Susu Rumahan">
+    <meta name="twitter:description" content="Pesan kopi susu Saji — Satuan Rp25.000, Paket 3 Rp69.000, Paket 6 Rp129.000.">
+    <meta name="twitter:image" content="../resources/foto-produk.webp">
+    <link rel="icon" type="image/svg+xml" href="../resources/favicon.svg">
     <script src="../script/order.js" defer></script>
 </head>
 <body>
@@ -12,6 +23,8 @@
     <main>
 
         <section class="checkout-page">
+
+            <a class="back-link" href="../index.html">← Kembali ke Beranda</a>
 
             <h1 class="checkout-headline">PESAN</h1>
 
@@ -56,7 +69,7 @@
                         </p>
                         <label for="wa">Nomor WhatsApp</label>
                         <p>
-                            <input type="number" id="wa" name="wa" inputmode="tel" autocomplete="tel" placeholder="Contoh : 08xx xxxx xxxx" required>
+                            <input type="tel" id="wa" name="wa" inputmode="tel" autocomplete="tel" placeholder="Contoh : 08xx xxxx xxxx" required>
                         </p>
 
                         <label for="catatan">Catatan (opsional)</label>
