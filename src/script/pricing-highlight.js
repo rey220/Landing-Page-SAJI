@@ -9,8 +9,12 @@ function pindahBingkai(kunci) {
     }
     kartuHarga.forEach(function (kartu) {
         kartu.classList.remove("popular-product");
+        kartu.classList.remove("zoom-popular");
+        kartu.classList.add("zoom-card");
     });
     kartuTujuan.classList.add("popular-product");
+    kartuTujuan.classList.remove("zoom-card");
+    kartuTujuan.classList.add("zoom-popular");
     const namaPaket = kartuTujuan.querySelector(".packet-name");
     if (labelPopuler && namaPaket) {
         namaPaket.after(labelPopuler);

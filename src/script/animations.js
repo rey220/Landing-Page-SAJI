@@ -15,7 +15,7 @@ words.forEach(function (word, index) {
     }
 });
 
-const revealTargets = document.querySelectorAll(".headline-benefit-container, #harga .text-container, .testimonial-headline-container, .credit-text, .hero-page .second-label, .hero-page .intro-container, .hero-page .cta-container, .hero-page .foto-container");
+const revealTargets = document.querySelectorAll(".headline-benefit-container, #harga .text-container, .testimonial-headline-container, .hero-page .second-label, .hero-page .intro-container, .hero-page .cta-container, .hero-page .foto-container");
 revealTargets.forEach(function (target) {
     target.classList.add("reveal");
 });
